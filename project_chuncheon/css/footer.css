@@ -1,0 +1,85 @@
+#footer{
+	width:100%;
+	background:url(../img/footer_bg.png) repeat-x 0 50px;
+	position:relative;
+	clear:both;
+	margin-top:50px;
+}
+.footer_in{
+	width:1236px;
+	height:330px;
+	margin:0 auto;
+}
+
+/* 탑으로 올리기 */
+
+#btn_top_wrap{
+	position:absolute;
+	right:7%;
+}
+#btn_top_wrap a.btn_top{
+	width:75px;
+	height:50px;
+	display:block;
+}
+
+/* 푸터메뉴 */
+
+.foot_menu{
+	padding-top:65px;
+	width:513px;
+	height::49px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.foot_menu li{
+	float:left;
+	border-left:2px solid #fff;
+	padding:0 15px;
+}
+.foot_menu li:first-child{
+	border-left:none;
+}
+.foot_menu li a{
+	font-size:13px;
+	color:#fff;
+	font-weight:600;
+}
+.foot_menu li a:hover{
+	text-decoration:underline;
+}
+
+/* 푸터로고 */
+
+.footlogo_area h2{
+	margin:89px 140px 0 0;
+	float:left;
+	width:308px;
+	height:74px;
+}
+
+/* 푸터카피 */
+
+.footcopy_area{
+	margin-top:60px;
+	float:left;
+}
+.footcopy_area>a img{
+	width:170px;
+	height:43px;
+	padding:20px 0 20px 180px;
+}
+.footcopy_area>p{
+	font-size:13px;
+	color:#767676;
+	font-weight:600;
+}
+
+
+
+
+
+
+
+
+

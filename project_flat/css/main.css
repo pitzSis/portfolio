@@ -1,0 +1,493 @@
+@import url(common.css);
+
+/* 기본 */
+body{
+	background:url(../img/m_img/body_bg.png) repeat-y left top fixed;  /*배경이미지*/
+	background-size:cover; /* 배경이미지 비율 유지하면서 배경 이미지 크기 조절 */
+}
+
+/* ------------------------ 모바일용 CSS ------------------------- */
+
+/* 모바일 기본 */
+
+#wrap{
+	width:100%;
+	margin:0 auto;
+	max-width:1920px; /*최대너비값을 제한하여 비대하게 커지는것을 방지*/
+}
+#wrap section{ /*  테이블 박스 사이즈 고정 */
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.m_hide, .ta_ver, .pc_ver{ /*  모바일버전에서 불필요한 pc버전, 태블릿버전 이미지 안보이게 하기 */
+	display:none !important;
+}
+
+/* 헤더영역 */
+.header{
+	width:100%;
+	background:#e6e6e6;
+	position:relative;
+}
+.logo{
+	padding:15px;
+}
+
+.util{ /* 유틸메뉴는 모바일버전에서는 보이게 하지 않음 */
+	display:none;
+}
+.nav{
+	width:100%;
+}
+.gnb{
+	display:none;
+}
+.gnb li{
+	background:#fff;
+
+}
+.gnb li:hover{
+	background:#e6e6e6;
+}
+.gnb li a{
+	display:block;
+	width:80%;
+	padding:10px 0 5px 0;
+	text-indent:20px;
+	text-indent:1.250rem;
+}
+.gnb li span{  /*  +  */
+	width:20%;
+	text-indent:-9999px;
+	background:url(../img/m_img/plus.png) no-repeat center center;
+	cursor:pointer;
+	float:right;
+	margin-top:-27px;
+}
+.menu_toggle_btn{
+	display:block;
+	width:21px;
+	height:18px;
+	position:absolute;
+	top:20px;
+	right:20px;
+	text-indent:-9999px;
+	background:url(../img/m_img/mobile_menu.png) no-repeat;
+	cursor:pointer;
+}
+
+/* 메인비주얼 */
+.mainvisual_area{
+	width:100%;
+	height:100%;
+}
+.mainvisual img{
+	width:100%;
+	max-width:1280px;
+	height:100%;
+}
+
+/* con_01 */
+.con_01 dl{
+	background:#fff;
+	padding:15px 0 40px 0;
+}
+.con_01 dt{
+	text-align:center;
+}
+.con_01 dd{
+	font-size:18px;
+	font-size:1.125em;
+	color:#565656;
+	text-align:center;
+	padding-top:10px;
+	font-family:'Nanum Gothic';
+	line-height:1.3;
+}
+.con_01 .flatdesign01, .con_01 .flatdesign02{
+	width:100%;
+}
+.con_01 .flatdesign01>p>img, .con_01 .flatdesign02>p>img{
+	width:100%;
+	max-width:100%;
+}
+
+/*  con_02 */
+.con_02 .flatdesign03{
+	width:100%;
+	background:#3f9ab7;
+	text-align:center;
+	padding-top:40px;
+}
+.con_02 .flatdesign03 img{
+	width:90%;
+	max-width:360px;
+}
+
+/* con_03 최근글, 인기글 영역 */
+.con_03 .latest_art, .con_03 .popular_art{
+	width:100%;
+}
+
+.con_03 .latest_art h3{
+	background:#f17285;
+}
+.con_03 .popular_art h3{
+	background:#f2df83;
+}
+
+.con_03 .latest_art ul, .con_03 .popular_art ul{
+	height:155px;
+	padding-top:20px;
+	background:#fff;
+}
+
+.con_03 .latest_art ul li{ /* 리스트 스타일 */
+	background:url(../img/m_img/pink_dot.png) no-repeat 12px 6px;
+	padding-left:37px;
+}
+.con_03 .popular_art ul li{
+	background:url(../img/m_img/green_dot.png) no-repeat 12px 6px;
+	padding-left:37px;
+}
+
+.con_03 .latest_art ul li a, .con_03 .popular_art ul li a{
+	font-size:14px;
+	font-size:0.875rem;
+	color:#5d5d5d;
+	line-height:2;
+	font-weight:700;
+}
+.con_03 .latest_art ul li a:hover, .con_03 .popular_art ul li a:hover{
+	text-decoration:underline;
+}
+.con_03 .latest_art>ul li span, .con_03 .popular_art>ul li span{ /* 날짜숨기기 */
+	display:none;
+}
+
+/* con_04 */
+.con_04{
+	background:url(../img/m_img/stylepic_bg.png) no-repeat center center;
+	width:100%;
+	text-align:center;
+	padding:25px 0;
+}
+.con_04 img{
+	width:70%;
+	max-width:423px;
+}
+
+/* 푸터영역 */
+.footer{
+	width:100%;
+	height:180px;
+	background:#e6e6e6;
+}
+.footer h2{
+	padding:22px 0 15px 0;
+	text-align:center;
+}
+.footer h2 img{
+	width:55.454545454545454545%;
+	max-width:220px;
+}
+.social_section{
+	width:60%;
+	padding:20px 0;
+	padding:0.9rem 0;
+	text-align:center;
+	box-sizing:border-box;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	margin:0 auto;	
+}
+
+.sns li{
+	display:inline;
+	padding:0 3%;
+}
+
+.footer>p{
+	text-align:center;
+	padding-top:15px;
+	color:#595959;
+	font-family:'Nanum Gothic';
+	font-size:1.0em;
+}
+
+/* ------------------------ 태블릿용 CSS ------------------------- */
+
+@media all and (min-width:768px){
+	
+	#wrap{
+		width:100%;
+		position:relative;
+	}
+	.pc_hide, .pc_ver{ /*  태블릿버전에서 불필요한 모바일버전, pc버전 이미지 안보이게 하기 */
+		display:none !important;
+	}
+	.m_hide, .util, .ta_ver{
+		display:block !important;
+	}
+	
+	/* 헤더영역 */
+	.header{
+		height:140px;
+		position:relative;
+	}
+	.logo{
+		padding:65px 0 0 30px !important;
+	}
+	.logo img{
+		width:241px;
+		max-width:241px;
+	}
+
+	.gnb li .sub_menu_toggle_btn, .menu_toggle_btn{
+		display:none; /* 모바일버전 토글버튼 안보이게 하기 */
+	}
+	
+	.gnb{
+		display:block;
+		position:absolute;
+		bottom:20px;
+		right:55px;
+	}
+	.gnb li{
+		float:left;
+		background:none;
+	}
+	
+	.util{
+		position:absolute;
+		top:40px; right:55px;
+	}
+	.util li{
+		float:left;
+		padding-left:10px;
+	}
+
+	/* con_01 영역 */
+	.con_01{
+		overflow:hidden;
+	}
+	.con_01 dl{
+		height:160px;
+		padding-top:20px !important;
+	}
+	
+	.flatdesign01{
+		width:50% !important;
+		float:left;
+	}
+	.flatdesign02{
+		width:50% !important;
+		float:right;
+	}
+	
+	/* con_02 */
+	.con_02{
+		clear:both;
+		height:241px;
+	}
+	
+	/* con_03 최근글, 인기글 영역 */
+	.latest_art{
+		width:49.2% !important;
+		float:left;
+	}
+	.popular_art{
+		width:49.2% !important;
+		float:right;
+	}
+	.latest_art h3, .popular_art h3{
+		background:none !important;
+	}
+	.latest_art h3 img, .popular_art h3 img{
+		width:100%;
+		max-width:100%;
+	}
+	.con_03 ul{
+		padding:5px 0 8px 0 !important;
+		width:95%;
+	}
+	
+	/* con_04 */
+	.con_04{
+		clear:both;
+		height:280px;
+		padding:30px 0;
+	}
+	
+	/* 푸터영역 */
+	.social_section{
+		width:30%;
+	}
+	.sns li{
+		display:inline;
+		padding:0 4%;
+	}
+	
+}
+
+/* ------------------------ PC용 CSS ------------------------- */
+
+@media all and (min-width:980px){
+	
+	.pc_hide, .ta_ver{ /*  pc버전에서 불필요한 모바일버전, 태블릿버전 이미지 안보이게 하기 */
+		display:none !important;
+	}
+	.m_hide, .util, .pc_ver{
+		display:block !important;
+	}
+	
+	/* pc버전 레이아웃 잡기 */
+	.header{
+		width:100%;
+		height:100px;
+		margin-bottom:50px; /* 헤더와 콘텐츠 사이 마진 */
+	}
+	.header_in{
+		width:1400px;
+		margin:0 auto;
+		position:relative;
+	}
+	.container{
+		width:1400px;
+		margin:0 auto;
+	}
+	.footer{
+		width:100%;
+	}
+	
+	/* 헤더영역 */
+	.logo{
+		padding:30px 0 !important;
+	}
+	.gnb{
+		display:block;
+		position:absolute;
+		top:38px; right:170px;
+	}
+	.util{
+		position:absolute;
+		top:40px; right:0;
+	}
+	
+	/* 메인비주얼 영역 */
+	.mainvisual_area{
+		width:50% !important;
+		float:left;
+		margin-bottom:50px;
+	}
+	
+	/* pc버전 top contents*/
+	.pc_contents{
+		width:50%;
+		float:right;
+		margin-bottom:50px;
+	}
+
+	.con_01{
+		width:100% !important;
+	}
+	.con_01 dl{
+		padding:10px 0 20px 0 !important;
+		min-height:100px;
+	}
+	.con_01 dt img{
+		width:70%;
+		max-width:198px;
+	}
+
+	.con_02{
+		width:100%;
+	}
+	.con_02 .flatdesign03{
+		padding-top:76px;
+	}
+	
+	/* con_03 최근글, 인기글 영역 */
+	.con_03{
+		clear:both;
+		height:264px;
+	}
+	.con_03 ul{
+		height:180px !important;
+		width:96.5%;
+	}	
+	.con_03 .latest_art ul li{ /* 리스트 스타일 */
+		background:url(../img/m_img/pink_dot.png) no-repeat 25px 8px;
+		padding-left:50px;
+	}
+	.con_03 .popular_art ul li{
+		background:url(../img/m_img/green_dot.png) no-repeat 25px 8px;
+		padding-left:50px;
+	}
+
+	.con_03 .latest_art ul li a, .con_03 .popular_art ul li a{
+		font-size:16px;
+		font-size:1.000rem;
+	}
+
+	.con_03 .latest_art>ul li span, .con_03 .popular_art>ul li span{ /* 날짜보이기 */
+		display:block;
+		float:right;
+		padding:7px 40px 0 0;
+		font-family:'Nanum Gothic';
+		color:#5d5d5d;
+	}
+
+	/* con_04 */
+	.con_04{
+		margin:50px 0;
+		width:100%;
+	}
+	
+	/* 푸터영역 */
+	.social_section{
+		width:20%;
+	}
+	.sns li{
+		display:inline;
+		padding:0 7%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

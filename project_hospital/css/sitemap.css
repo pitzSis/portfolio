@@ -1,0 +1,37 @@
+.topGo{margin-top:73px; text-align:center;}
+.topGo>a{padding:26px 43px; background-color:#3894cc; color:#ffffff; font-size:14px;
+background:url(../img/top.png) no-repeat;}
+
+/* -------------------- 맵 -------------------- */
+
+#map{
+	width:100%;
+	margin-top:10px;
+	overflow:hidden;
+	background:#e9f4fe;
+	padding:33px 0;	
+}
+.map_in{
+	width:1200px;
+	margin:0 auto;
+}
+.map_in>dl{
+	float:left;
+	padding:0 40px;
+}
+.map_in>dl>dt{
+	font-size:16px;
+	color:#1f2d3a;
+	font-family:'Nanum Gothic', '나눔고딕', sans-serif;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.map_in>dl>dd>ul>li>a{
+	font-size:13px;
+	color:#5a656f;
+	font-family:'Nanum Gothic','나눔고딕', sans-serif;
+	line-height:1.8;
+}
+.map_in>dl>dd>ul>li>a:hover{
+	text-decoration:underline;
+}

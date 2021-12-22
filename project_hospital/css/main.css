@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(sitemap.css);
+@import url(footer.css);
+
+/* -------------------- 메인비주얼 -------------------- */
+
+.mvisual{
+	position:relative;
+}
+.mvisual>ul.mvisual_img{
+	width:1599px;
+	height:720px;
+	margin:0 auto;
+}
+.mvisual>ul.mvisual_img>li{
+	display:none;
+	position:absolute;
+	top:0;
+}
+.mvisual>ul.mvisual_img>li:first-child{
+	display:block;
+}
+
+.mvisual>ul.mvisual_btn{
+	position:absolute;
+	bottom:30px;
+	left:47.4%;
+}
+.mvisual>ul.mvisual_btn>li{
+	display:inline;
+	padding:0 6px;
+	cursor:pointer;
+}
+
+/* -------------------- 컨텐츠 공통 -------------------- */
+
+a.moreinfo{ /* 스타일을 전부 동일하니 각 section에서 위치값만 맞출것 */
+	color:#ffffff;
+	font-size:13px;
+	letter-spacing:5px;
+	padding:4px 13px 5px 17px;
+	border:1px solid #ffffff;
+}
+a.moreinfo:hover{
+	color:#3290c4;
+	background:#ffffff;
+}
+
+/* section1_진료과목소개 */
+
+.section1{
+	width:1199px;
+	margin:50px auto 0; /* 비주얼과 컨테이너 사이 공백, 양옆 정렬 */
+	overflow:hidden;
+
+}
+.section1>ul.department>li{
+	float:left;
+	width:299px;
+	height:400px; /* position:relative 사용시 height 값 꼭 입력 */
+	position:relative;
+	margin-left:1px;
+}
+.section1>ul.department>li:first-child{
+	margin-left:0;
+}
+
+.section1>ul.department>li>a{
+	position:absolute;
+	top:147px;
+	left:76px;
+}
+
+/* section2_공지사항,의료진소개,퀵메뉴 */
+
+.section2{
+	width:1199px;
+	margin:30px auto 0;
+	overflow:hidden;
+}
+
+/* 공지사항 */
+
+.section2 .notice{
+	float:left;
+	width:429px;
+	position:relative;
+}
+.section2 .notice>h3{
+	font-size:18px;
+	color:#666666;
+	font-weight:normal;
+	border-top:2px solid #168ac8;
+	border-bottom:1px solid #969696;
+	padding:14px 0 16px 10px;
+}
+.section2 .notice>ul{
+	border-bottom:1px solid #969696; /* 공지사항 맨 아래 선 진하게 */
+}
+.section2 .notice>ul>li{
+	border-bottom:1px solid #ebebeb;
+	background:url(../img/gnb_dot.png) no-repeat 16px 16px;
+	padding:7px 0 7px 30px;
+	width:399px; /* 공지사항 width 값 429px - padding-left 값 30px = 399px */
+	overflow:hidden;
+}
+.section2 .notice>ul>li>a{
+	font-size:15px;
+	color:#414141;
+	font-weight:300;
+	float:left;
+}
+.section2 .notice>ul>li>a:hover{
+	text-decoration:underline;
+}
+.section2 .notice>ul>li>span{
+	float:right;
+	font-size:15px;
+	color:#414141;
+	font-weight:300;
+	padding-right:15px;
+}
+.section2 .notice>.more{
+	position:absolute;
+	top:20px;
+	right:10px;
+}
+
+/* 의료진소개 */
+
+.section2 .introduce{
+	float:left;
+	margin:0 20px;
+	position:relative;
+	width:301px;
+	height:250px;
+}
+.section2 .introduce>a{
+	position:absolute;
+	top:166px;
+	left:77px;
+}
+
+/* 퀵메뉴 */
+
+.section2 .quickmenu{
+	float:left;
+	width:429px;
+	height:250px;
+}
+.section2 .quickmenu>dl{
+	width:210px;
+	height:120px;
+	float:left;
+}
+.section2 .quickmenu>dl.quick1{
+	margin-right:9px;
+	margin-bottom:10px;
+	background:url(../img/icon1.png) no-repeat;
+}
+.section2 .quickmenu>dl.quick2{
+	margin-bottom:10px;
+	background:url(../img/icon2.png) no-repeat;
+}
+.section2 .quickmenu>dl.quick3{
+	margin-right:9px;
+	background:url(../img/icon3.png) no-repeat;
+}
+.section2 .quickmenu>dl.quick4{
+	background:url(../img/icon4.png) no-repeat;
+}
+.section2 .quickmenu>dl>dt{
+	padding-top:21px;
+	padding-left:95px;
+}
+.section2 .quickmenu>dl>dt>a{
+	font-size:15px;
+	color:#0075b3;
+	font-weight:500;
+}
+.section2 .quickmenu>dl>dd{
+	padding-left:95px;
+}
+.section2 .quickmenu>dl>dd>a{
+	color:#414141;
+}
+
+/* section3 */
+
+.section3{
+	width:1199px;
+	margin:30px auto 0;
+	overflow:hidden; /* 추가 자식요소를 float 할 경우 부모 요소에 overflow 또는 display를 해줌.
+							그럼 높이값 없어도 되고 clear:both없어도 됨*/
+}
+.section3>div{
+	float:left;
+	width:299px;
+	height:250px;
+	position:relative;
+	margin-left:1px;
+}
+.section3>div:first-child{
+	margin-left:0;
+}
+.section3>div.consult>a{ /* 주치의상담실, 비공개상담실 moreinfo 위치 */
+	position:absolute;
+	bottom:62px;
+	left:76px;
+}
+.section3>div.reservation>a{ /* 예약문의하기 moreinfo 위치 */
+	position:absolute;
+	bottom:34px;
+	left:90.5px;
+	
+}
+.section3>div.time{
+	width:299px;
+	height:250px;
+	background-color:#3290c4;
+}
+.section3>div.time>dl{
+	width:230px;
+	height:140px;
+	background:url(../img/clock.png) no-repeat 133px 31px;
+	padding:86px 35px 0;
+	overflow:hidden;
+}
+.section3>div.time>dl>dt{
+	color:#b6d7e9;
+	font-size:15px;
+	float:left;
+	width:80px;
+}
+.section3>div.time>dl>dd{
+	color:#ffffff;
+	font-size:15px;
+	font-weight:500;
+	float:left;
+	width:149px;
+}
+.section3>div.time>dl>dd>span.ampm{
+	color:#b6d7e9;
+	font-size:15px;
+	font-weight:300;
+	padding-right:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

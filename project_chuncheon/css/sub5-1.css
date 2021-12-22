@@ -1,0 +1,215 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* ---------------------------------------- 서브비주얼 영역 ---------------------------------------- */
+
+#svisual{
+	width:100%;
+	height:248px;
+	background:#d54c5d; /* 화면 축소 확대 시 여백 생기는 부분에 백그라운드 설정 */
+}
+#svisual .svisual_in{
+	width:1920px;
+	height:248px;
+	margin:0 auto;
+	background:url(../img/sub/sub5/svisual5.png) no-repeat;
+}
+
+/* ---------------------------------------- sub5-1 영역 ---------------------------------------- */
+
+/* sub5-1 기본 레이아웃 */
+
+#scontainer{
+	width:1140px;
+	margin:0 auto;
+}
+.sub_left{ /* lnb 레이아웃 */
+	width:237px;
+	float:left;
+}
+.sub_right{
+	width:876px; /* 903px - 27px(subleft와의 간격) */
+	float:right;
+}
+
+/* lnb */
+
+ul.lnb{
+	width:233px;
+	border-left:2px solid #ddd;
+	border-right:2px solid #ddd;
+}
+ul.lnb>li{
+	background:url(../img/sub/arrow_off.gif) no-repeat 200px 23px;
+}
+ul.lnb>li.lnb_active1{
+	background:url(../img/sub/arrow_on.gif) no-repeat 200px 23px;
+}
+ul.lnb>li>a{   /*주메뉴 */
+	text-decoration:none; 
+	display:block;
+	height:34px;
+	color:#414141;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 0 0 23px;
+	border-bottom:2px solid #ddd;
+}
+ul.lnb>li>a:hover{  /*주메뉴 over*/
+	color:#ba2454;
+}
+ul.lnb>li>a.lnb_active2{
+	color:#ba2454;
+}
+
+/* 서브탑_제목부분 */
+
+.sub_top{
+	margin-top:35px;
+	height:35px;
+	border-bottom:1px solid #bebebe;
+}
+.sub_right h3{
+	font-size:24px;
+	color:#414141;
+	float:left;	
+}
+.sub_right .location{
+	float:right;
+	background:url(../img/sub/home.png) no-repeat 20px 11px;
+	padding:10px 0 0 23px;
+}
+.sub_right .location span{
+	padding:0 5px 0 15px;
+	color:#414141;
+	font-size:13px;
+	letter-spacing:-1px;
+	background:url(../img/sub/location_arrow.png) no-repeat 0px 4px;
+}
+.sub_right .location span:first-child{
+	background:none;
+}
+.sub_right .location span>strong{
+	font-weight:bold;
+}
+
+/* ----- 콘텐츠 부분 ----- */
+
+.sub_right>.sub_con{
+	margin-top:37px; /* 박스안 전체 여백 */
+}
+
+/* 페이지 정보 */
+
+.sub_con .page_info{
+	clear:both;
+	padding-bottom:24px;
+	border-bottom:2px solid #ea3a68;
+	margin-bottom:35px;
+}
+.sub_con .page_info p{
+	float:left;
+	color:#414141;
+}
+.sub_con .page_info .array{
+	float:right;
+}
+.sub_con .page_info .array li{
+	float:left;
+	padding:0 8px;
+	color:#414141;
+	background:url(../img/sub/bar.png) no-repeat 0 2px;
+	cursor:pointer;
+}
+.sub_con .page_info .array li:first-child{
+	background:none;
+}
+.sub_con .page_info .array li:hover{
+	text-decoration:underline;
+}
+.sub_con .page_info .array li.array_active{
+	font-weight:bold;
+	color:#ea3a68;
+	cursor:default;
+	text-decoration:none;
+}
+
+/* 호텔 정보 */
+
+.sub_con .hotel_info{
+	width:876px;
+	height:220px;
+	padding:15px 0 15px 15px;
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+}
+.sub_con .hotel_first{
+	border-top:1px solid #ddd;
+}
+.sub_con .hotel_info:hover{
+	background:#ffebee;
+}
+.sub_con .hotel_info .hotel_img{
+	float:left;
+	margin-right:30px;
+}
+.sub_con .hotel_info .hotel_list{
+	margin-top:10px;
+}
+.sub_con .hotel_info .hotel_list>h4{
+	font-size:16px;
+	display:inline;
+	padding-left:10px;
+	border-left:3px solid #ea3a68;
+	color:#414141;
+	font-weight:bold;
+}
+.sub_con .hotel_info .hotel_list>ul{
+	padding-top:15px;
+}
+.sub_con .hotel_info .hotel_list>ul>li{
+	line-height:1.8;
+	color:#414141;
+}
+.sub_con .hotel_info .hotel_list>ul>li>b{
+	font-weight:bold;
+}
+.sub_con .hotel_info .hotel_list>ul>li.wifi{
+	display:inline;
+	background:url(../img/sub/sub5/wifi.png) no-repeat 0 2px;
+	padding-left:20px;
+}
+.sub_con .hotel_info .hotel_list>ul>li.check{
+	display:inline;
+	background:url(../img/sub/sub5/check.png) no-repeat 0 2px;
+	padding-left:20px;
+}
+
+/* 페이징 버튼 */
+
+.paging_btn{ 
+	clear:both;
+	padding-top:20px;
+	padding-left:365px;
+}
+.paging_btn>li{
+	float:left;
+	width:19px;
+	height:18px;
+	text-align:center;
+	margin:0 5px;
+	color:#414141;
+	font-weight:bold;
+	cursor:pointer;
+}
+.paging_btn>li.now_page{
+	background:#cf2551;
+	color:#fff;
+	cursor:default;
+}
+
+
+
+

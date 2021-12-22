@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* ---------------------------------------- 서브비주얼 영역 ---------------------------------------- */
+
+#svisual{
+	width:100%;
+	height:248px;
+	background:#d54c5d; /* 화면 축소 확대 시 여백 생기는 부분에 백그라운드 설정 */
+}
+#svisual .svisual_in{
+	width:1920px;
+	height:248px;
+	margin:0 auto;
+	background:url(../img/sub/sub6/svisual6.png) no-repeat;
+}
+
+/* ---------------------------------------- sub6-1 영역 ---------------------------------------- */
+
+/* sub6-1 기본 레이아웃 */
+
+#scontainer{
+	width:1140px;
+	margin:0 auto;
+}
+.sub_left{ /* lnb 레이아웃 */
+	width:237px;
+	float:left;
+}
+.sub_right{
+	width:876px; /* 903px - 27px(subleft와의 간격) */
+	float:right;
+}
+
+/* lnb */
+
+ul.lnb{
+	width:233px;
+	border-left:2px solid #ddd;
+	border-right:2px solid #ddd;
+}
+ul.lnb>li{
+	background:url(../img/sub/arrow_off.gif) no-repeat 200px 23px;
+}
+ul.lnb>li.lnb_active1{
+	background:url(../img/sub/arrow_on.gif) no-repeat 200px 23px;
+}
+ul.lnb>li>a{   /*주메뉴 */
+	text-decoration:none; 
+	display:block;
+	height:34px;
+	color:#414141;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 0 0 23px;
+	border-bottom:2px solid #ddd;
+}
+ul.lnb>li>a:hover{  /*주메뉴 over*/
+	color:#ba2454;
+}
+ul.lnb>li>a.lnb_active2{
+	color:#ba2454;
+}
+
+/* 서브탑_제목부분 */
+
+.sub_top{
+	margin-top:35px;
+	height:35px;
+	border-bottom:1px solid #bebebe;
+}
+.sub_right h3{
+	font-size:24px;
+	color:#414141;
+	float:left;	
+}
+.sub_right .location{
+	float:right;
+	background:url(../img/sub/home.png) no-repeat 20px 11px;
+	padding:10px 0 0 23px;
+}
+.sub_right .location span{
+	padding:0 5px 0 15px;
+	color:#414141;
+	font-size:13px;
+	letter-spacing:-1px;
+	background:url(../img/sub/location_arrow.png) no-repeat 0px 4px;
+}
+.sub_right .location span:first-child{
+	background:none;
+}
+.sub_right .location span>strong{
+	font-weight:bold;
+}
+
+/* ----- 콘텐츠 부분 ----- */
+
+.sub_right>.sub_con{
+	margin-top:37px; /* 박스안 전체패딩 */
+}
+
+/* 페이지 정보 */
+
+.sub_con .page_info{
+	clear:both;
+	padding-bottom:22px;
+	margin-bottom:35px;
+}
+.sub_con .page_info p{
+	float:left;
+	padding-top:3px;
+	color:#414141;
+}
+.sub_con .page_info>form{
+	float:right;
+}
+.sub_con .page_info input[type="text"]{
+	border:1px solid #c3c3c3;
+	width:180px;
+	height:20px;
+	padding-left:5px;
+}
+.sub_con .page_info select{
+	border:1px solid #c3c3c3;
+	width:80px;
+	height:22px;
+	padding-left:5px;
+}
+
+table{
+	width:100%;
+	color:#414141;
+}
+td{
+	text-align:center;
+	border-bottom:1px solid #ddd;
+	padding:10px 0;
+}
+td.left_array{
+	text-align:left;
+	padding-left:80px;
+	background:url(../img/sub/lnb_dot.png) no-repeat 70px 16px;
+}
+thead th{
+	background:url(../img/sub/sub6/bg_th.gif) repeat-x;
+	height:29px;
+	border-top:2px solid #ea3a68;
+}
+table a{
+	text-decoration:none;
+	color:#414141;
+}
+table a:hover{
+	text-decoration:underline;
+	color:#414141;
+}
+
+/* 페이징 버튼 */
+
+.paging_btn{ 
+	clear:both;
+	padding-top:20px;
+	padding-left:235px;
+}
+.paging_btn>li{
+	float:left;
+	width:19px;
+	height:18px;
+	text-align:center;
+	margin:0 5px;
+	color:#414141;
+	font-weight:bold;
+	cursor:pointer;
+}
+.paging_btn>li.now_page{
+	background:#cf2551;
+	color:#fff;
+	cursor:default;
+}
+
+
+
+
+
+

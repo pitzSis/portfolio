@@ -1,0 +1,11 @@
+#footer{width:100%; background:#333333;}
+	.footerlogo{text-align:center; padding:50px 0;}
+	.fsns{text-align:center; padding-bottom:50px; border-bottom:1px solid #acacac;}
+		.fsns li{display:inline; padding:0 15px;}
+	.futil{text-align:center; padding:30px 0;}
+		.futil li{display:inline; padding:0 15px; border-left:1px solid #ffffff;}
+		.futil li:first-child{border-left:none;}
+			.futil li a{color:#ffffff; font-size:15px;}
+			.futil li a:hover{text-decoration:underline;}
+			.futil li a.yellowColor{color:#ffde00;}
+	.fcopy{text-align:center; color:#ffffff; font-size:13px; line-height:1.6; padding-bottom:50px;}

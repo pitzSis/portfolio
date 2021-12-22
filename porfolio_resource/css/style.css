@@ -1,0 +1,92 @@
+/* -------------------------------- 
+
+Tab
+
+-------------------------------- */
+
+/* CSS3 STYLE GENERIC */
+.view{
+   width:327px;
+   height:226px;
+   margin:5px 5px;
+   float:left;
+   overflow:hidden;
+   position:relative;
+   text-align:center;
+   cursor:default;
+}
+.view .mask, .view .content {
+   width:327px;
+   height:226px;
+   position:absolute;
+   overflow:hidden;
+   top:0;
+   left:0;
+}
+.view img{
+   display:block;
+   position:relative;
+}
+.view a.info{
+   background:url(../img/tab/link.png) center no-repeat;
+   display:inline-block;
+   text-decoration:none;
+   padding:0;
+   text-indent:-9999px;
+   width:80px;
+   height:80px;
+   padding:73px 100px;
+}
+
+/* CSS3 STYLE GENERIC */
+.view2{
+   width:242.7583px;
+   height:226px;
+   margin:5px 5px;
+   float:left;
+   overflow:hidden;
+   position:relative;
+   text-align:center;
+   cursor:default;
+}
+.view2 .mask2, .view2 .content{
+	width:242.7583px;
+	height:226px;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
+}
+.view2 img{
+	display:block;
+	position:relative;
+}
+.view2 a.info{
+	background:url(../img/tab/link.png) center no-repeat;
+	display:inline-block;
+	text-decoration:none;
+	padding:0;
+	text-indent:-9999px;
+	width:50px;
+	height:50px;
+	padding:70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

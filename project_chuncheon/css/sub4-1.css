@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* ---------------------------------------- 서브비주얼 영역 ---------------------------------------- */
+
+#svisual{
+	width:100%;
+	height:248px;
+	background:#d54c5d; /* 화면 축소 확대 시 여백 생기는 부분에 백그라운드 설정 */
+}
+#svisual .svisual_in{
+	width:1920px;
+	height:248px;
+	margin:0 auto;
+	background:url(../img/sub/sub4/svisual4.png) no-repeat;
+}
+
+/* ---------------------------------------- sub4-1 영역 ---------------------------------------- */
+
+/* sub4-1 기본 레이아웃 */
+
+#scontainer{
+	width:1140px;
+	margin:0 auto;
+}
+.sub_left{ /* lnb 레이아웃 */
+	width:237px;
+	float:left;
+}
+.sub_right{
+	width:876px; /* 903px - 27px(subleft와의 간격) */
+	float:right;
+}
+
+/* lnb */
+
+ul.lnb{
+	width:233px;
+	border-left:2px solid #ddd;
+	border-right:2px solid #ddd;
+}
+ul.lnb>li{
+	background:url(../img/sub/arrow_off.gif) no-repeat 200px 23px;
+}
+ul.lnb>li.lnb_active1{
+	background:url(../img/sub/arrow_on.gif) no-repeat 200px 23px;
+}
+ul.lnb>li>a{   /*주메뉴 */
+	text-decoration:none; 
+	display:block;
+	height:34px;
+	color:#414141;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 0 0 23px;
+	border-bottom:2px solid #ddd;
+}
+ul.lnb>li>a:hover{  /*주메뉴 over*/
+	color:#ba2454;
+}
+ul.lnb>li>a.lnb_active2{
+	color:#ba2454;
+}
+
+/* 서브탑_제목부분 */
+
+.sub_top{
+	margin-top:35px;
+	height:35px;
+	border-bottom:1px solid #bebebe;
+}
+.sub_right h3{
+	font-size:24px;
+	color:#414141;
+	float:left;	
+}
+.sub_right .location{
+	float:right;
+	background:url(../img/sub/home.png) no-repeat 20px 11px;
+	padding:10px 0 0 23px;
+}
+.sub_right .location span{
+	padding:0 5px 0 15px;
+	color:#414141;
+	font-size:13px;
+	letter-spacing:-1px;
+	background:url(../img/sub/location_arrow.png) no-repeat 0px 4px;
+}
+.sub_right .location span:first-child{
+	background:none;
+}
+.sub_right .location span>strong{
+	font-weight:bold;
+}
+
+/* ----- 콘텐츠 부분 ----- */
+
+.sub_right>.sub_con{
+	margin-top:37px; /* 박스안 전체패딩 */
+}
+.sub_right>.sub_con>h4{
+	color:#414141;
+	font-size:18px;
+	display:inline;
+	border-bottom:2px solid #e71f53;
+	padding-bottom:5px; /* 패딩바텀은 글과 선 사이 간격*/
+	margin-left:32px;
+}
+
+/* 탭부분 */
+
+.sub_tab{
+	clear:both;
+	margin-top:43px; /* 제목 영역과 탭 사이 간격 */
+}
+
+ul.food_title{
+	width:876px;
+	padding-bottom:33px; /* 탭과 판넬 사이 간격 */
+}
+ul.food_title li{
+	float:left;
+	width:125px;
+	height:33px;
+}
+ul.food_title li a{
+	outline:none;
+	background:#f3f4f6;
+	border:1px solid #c5c5c5;
+	border-left:none;
+	display:block;
+	font-size:13px;
+	color:#414141;
+	text-align:center;
+	line-height:31px;
+}
+ul.food_title li a.s_selected{
+	background:#ea3a68;
+	text-decoration:none;
+	height:33px;
+	border:none;
+	color:#fff;
+	cursor:default;
+}
+
+/* 판넬 부분 */
+
+.food_panel{
+	padding-top:35px;
+}
+
+/* 판넬 부분_stab40 */
+
+/* 1위 */
+
+#stab40 .food_top{
+	width:876px;
+	height:221px;
+	margin-bottom:30px; /* 1위와 2위~5위 사이 여백 */
+}
+#stab40 .food_top>a{
+	float:left;
+	margin-right:30px;
+}
+#stab40 .food_top .food_info{
+	padding-top:33px;
+}
+#stab40 .food_top .food_info>h5{
+	font-size:16px;
+	display:inline;
+	padding-left:10px;
+	border-left:3px solid #ea3a68;
+	color:#414141;
+	font-weight:bold;
+}
+#stab40 .food_top .food_info>ul{
+	padding-top:15px;
+}
+#stab40 .food_top .food_info>ul>li{
+	padding-top:8px;
+	color:#414141;
+}
+#stab40 .food_top .food_info>ul>li:first-child{
+	padding-top:0;
+	padding-left:23px;
+	background:url(../img/sub/sub4/korea.gif) no-repeat;
+	display:inline;
+}
+#stab40 .food_top .food_info>ul>li:last-child{
+	line-height:1.6;
+}
+
+/* 2위~5위 */
+
+#stab40 .foodpost_etc{
+	height:234px;
+}
+#stab40 .foodpost_etc li{
+	float:left;
+	padding-left:10px;
+}
+#stab40 .foodpost_etc li:first-child{
+	padding-left:0;
+}
+#stab40 .foodpost_etc li>dl{
+	margin-top:10px;
+	margin-left:5px;
+}
+#stab40 .foodpost_etc li>dl>dt{
+	font-size:13px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+
+#stab40 .foodpost_etc>li.all_02>dl>dd{
+	background:url(../img/sub/sub4/cafe.gif) no-repeat;
+	padding-left:23px;
+}
+#stab40 .foodpost_etc>li.all_03>dl>dd{
+	background:url(../img/sub/sub4/korea.gif) no-repeat;
+	padding-left:23px;
+}
+#stab40 .foodpost_etc>li.all_04>dl>dd{
+	background:url(../img/sub/sub4/korea.gif) no-repeat;
+	padding-left:23px;
+}
+#stab40 .foodpost_etc>li.all_05>dl>dd{
+	background:url(../img/sub/sub4/japan.gif) no-repeat;
+	padding-left:23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

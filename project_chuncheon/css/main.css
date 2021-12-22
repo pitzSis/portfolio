@@ -1,0 +1,659 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* ---------------------------- 비주얼 영역 ---------------------------- */
+
+#mvisual{
+	width:100%;
+	height:424px;
+}
+
+.mvisual_in{
+	width:100%;
+	height:424px;
+	position:relative;
+	overflow:hidden;
+}
+.opacity{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../img/mvisual_opacity.png) repeat-x -8px 0;
+	z-index:90;
+}
+.visual_box{
+	width:8652px; /* 이미지가로크기(1236px) × 이미지개수(7) */
+	height:424px;
+	margin-left:-902px;
+}
+.visual_box li{
+	float:left;
+	margin:0 auto;
+	width:1236px;
+	height:424px;
+}
+
+/* 좌우버튼 위치 */
+
+.btn_side{ 
+	position:absolute;
+	top:166px;
+	left:50%;
+	margin-left:-705px;
+    width:1410px;
+	z-index:95;
+}
+.btn_side>span{
+	position:absolute;
+	display:block;
+	width:93px;
+	height:93px;
+	cursor:pointer;
+}
+.btn_side .prevbtn{
+	left:40px;
+	background:url(../img/mvisual_prev.png) no-repeat; /* 이전보기 */	
+}
+.btn_side .nextbtn{
+	right:40px;
+	background:url(../img/mvisual_next.png) no-repeat;  /* 다음보기 */	
+}
+
+/* 플레이스탑버튼 위치 */
+
+.btn_play{ 
+	position:absolute;
+	bottom:45px;
+	right:20%;
+	z-index:95;
+}
+.btn_play>img{
+	position:absolute;
+	display:block;
+	width:28px;
+	height:28px;
+	cursor:pointer;
+}
+.btn_play .mbtn_stop{
+	right:15px;
+}
+.btn_play .mbtn_play{
+	right:-20px;
+}
+
+/* ---------------------------- 퀵메뉴 영역 ---------------------------- */
+
+.quick_area{
+	width:1236px;
+	margin:0 auto;
+}
+ul.quickmenu{
+	width:1100px;
+	height:94px;
+	overflow:hidden;
+	margin:31px auto;
+}
+ul.quickmenu li{
+	float:left;
+	padding-right:25px;
+}
+ul.quickmenu li:last-child{
+	padding-right:0;
+}
+ul.quickmenu li a{
+	display:inline-block;
+	width:100px;
+	text-align:center;
+	font-family:'Nanum Gothic';
+	color:#686868;
+	font-size:14px;
+}
+ul.quickmenu li a:hover{
+	text-decoration:underline;
+}
+ul.quickmenu li a span{
+	display:block;
+	text-align:center;
+	padding-top:10px;
+}
+
+/* ---------------------------- con01 영역 ---------------------------- */
+
+.con01{
+	width:1236px;
+	height:271px;
+	margin:0 auto;
+}
+
+/* 이달의추천여행 */
+
+.con01_left{
+	float:left;
+	width:457px;
+	height:271px;
+	position:relative; /* dl 영역 위치 지정 */
+	overflow:hidden;
+	cursor:pointer;
+}
+.con01_left>dl{
+	width:457px;
+	height:85px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url(../img/month_trip_bg.png) no-repeat;
+}
+.con01_left>dl>dt{
+	font-size:15px;
+	color:#fff;
+	font-weight:600;
+	margin:15px 0 0 20px
+}
+.con01_left>dl>dd{
+	font-size:13px;
+	color:#fff;
+	line-height:1.3;
+	text-align:center;
+	margin-top:5px;
+}
+.con01_left>dl>dd:hover{
+	text-decoration:underline;
+}
+
+/* 공지사항 */
+
+.con01_center{
+	float:left;
+	width:463px;
+	height:271px;
+	margin:0 25px; /* 왼쪽 오른쪽 콘텐츠와의 여백 */
+	position:relative; /* 더보기버튼 위치 지정 */
+}
+.con01_center>h3{
+	font-size:17px;
+	padding:15px;
+	border-top:3px solid #fb9495;
+}
+.con01_center .notice{
+	width:433px;
+	height:174px;
+	border:2px solid #ddd;
+	padding:13px 13px 27px 13px;
+}
+.con01_center .notice li{
+	background:url(../img/dot.png) no-repeat 7px 13px;
+	border-bottom:1px solid #dedede;
+	padding:7px 10px 7px 21px;
+}
+
+.con01_center .notice li a{
+	color:#414141;
+	font-size:13px;
+}
+.con01_center .notice li a:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.con01_center .notice li .date{ /* 날짜 */
+	float:right;
+}
+
+.con01_center>p.more{ /* 더보기 버튼 */
+	position:absolute;
+	top:14px;
+	right:10px;
+}
+
+/* 팝업창 */
+
+.con01_right{
+	float:left;
+	width:262px;
+	height:267px;
+	border:2px solid #ddd;
+	position:relative; /* 버튼 위치 */
+}
+.con01_right .popup_visual{
+	width:260px;
+	height:235px;
+	border-bottom:2px solid #ddd;
+}
+.con01_right .popup_visual li{
+	display:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.con01_right .popup_visual li.poplist0{ /* 첫번째 이미지 보이게 */
+	display:block;
+}
+
+.con01_right .popup_btn{  /* 버튼영역*/
+    position:absolute;
+    bottom:3px;
+    left:78px;
+}
+.con01_right .popup_btn>span{
+	padding-right:5px;
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:url(../img/popup_dot_off.png) no-repeat;
+	cursor:pointer;
+}
+.con01_right .popup_btn>span.p_active{
+	padding-right:5px;
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:url(../img/popup_dot_on.png) no-repeat;
+}
+
+/* ---------------------------- con02 영역 ---------------------------- */
+
+.con02{
+	clear:both;
+	width:1236px;
+	height:377px;
+	margin:40px auto;
+}
+
+/* 네티즌여행후기 */
+
+.con02_left{
+	float:left;
+	width:604px;
+	height:377px;
+	position:relative; /* 더보기버튼 위치 지정 */
+}
+.con02_left>h3{
+	font-size:17px;
+	padding:15px;
+	border-top:3px solid #84c8d1;
+	border-bottom:2px solid #ddd;
+	margin-bottom:10px; /* 리뷰아티클과 제목 사이 여백 */
+}
+.review{
+	overflow:hidden;
+	padding:10px 0;
+	border-bottom:1px solid #c2baba;
+}
+.review_img{
+	float:left;
+	margin-right:25px;
+}
+.review>dl{
+	margin-bottom:15px; /* dl 영역과 자세히보기 영역 사이 마진 */
+}
+.review>dl>dt{
+	margin:10px 0 8px;
+}
+.review>dl>dt>a{
+	font-size:15px;
+	color:#414141;
+	font-weight:600;
+}
+.review>dl>dd>a{
+	font-size:13px;
+	color:#414141;
+	line-height:1.3;
+	text-align:center;
+	background:url(../img/dot.png) no-repeat 5px 5px;
+	padding-left:15px;
+}
+.review>dl>dd>a:hover{
+	text-decoration:underline;
+}
+.review .more_detail{
+	padding-left:5px;
+}
+
+.con02_left>p.more{ /* 더보기 버튼 */
+	position:absolute;
+	top:14px;
+	right:10px;
+}
+
+/* 영상으로떠나는춘천여행 */
+
+.con02_center{
+	float:left;
+	width:290px;
+	height:372px;
+	margin:0 25px; /* 왼쪽 오른쪽 콘텐츠와의 여백 */
+}
+.con02_center>h3{
+	font-size:17px;
+	padding:15px;
+	border-top:3px solid #f9bb2a;
+	border-bottom:2px solid #ddd;
+	margin-bottom:20px; /* 내용과 제목 사이 여백 */
+}
+
+.video_area{
+	width:286px;
+	border:2px solid #ddd;
+	position:relative; /* 이미지 위치, 재생버튼 위치 지정 */
+}
+
+.video_panel{
+	height:218px;
+	overflow:hidden;
+}
+.video_panel li{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.video_panel li.video_list0{
+	display:block;
+}
+.video_panel li .video_play{ /* 재생버튼 아이콘 */
+	position:absolute;
+	top:50px;
+	left:115px;
+}
+.video_panel li>dl>dt{
+	padding:10px 0 3px 8px;
+	font-size:15px;
+	color:#414141;
+	font-weight:600;
+}
+.video_panel li>dl>dd{
+	padding:0 5px 0 20px;
+	font-size:12px;
+	color:#414141;
+	line-height:1.2;
+	background:url(../img/dot.png) no-repeat 10px 5px;
+}
+
+/* 섬네일 버튼 */
+.video_tab{
+	height:61px;
+	margin-top:8px;
+}
+.video_tab li{
+	float:left;
+	margin-right:8px;
+	cursor:pointer;
+}
+.video_tab li.vlist2{
+	margin-right:0;
+}
+
+/* 인스타그램 */
+
+.con02_right{
+	float:left;
+	width:292px;
+	position:relative;
+}
+.con02_right>h3{
+	padding:14px 15px 7px;
+	border-top:3px solid #2f598b;
+	border-bottom:2px solid #ddd;
+	margin-bottom:20px; /* 내용과 제목 사이 여백 */
+}
+.con02_right .insta{
+	width:284px;
+	height:287px;
+	border:2px solid #ddd;
+	padding-left:4px;
+}
+.con02_right .insta li{
+	float:left;
+	padding:1.1px;
+}
+.con02_right .insta li:hover{
+	opacity:0.7;
+}
+
+/* ---------------------------- con03 영역 ---------------------------- */
+
+.con03{
+	clear:both;
+	width:1236px;
+	height:435px;
+	margin:0 auto;
+	background:#fff;
+}
+
+/* 탭 타이틀 */
+.con03 ul.tab_title{
+	width:1236px;
+	height:64px;
+}
+.con03 ul.tab_title li{
+	float:left;
+	padding-right:1px;
+}
+.con03 ul.tab_title li:last-child{
+	padding-right:0;
+}
+.con03 ul.tab_title li a{
+	width:288px; /* 가로값(308px) - 패딩값(20px) */
+	height:41px; /* 세로값(64px) - 패딩값(23px) */
+	background:url(../img/tabmenu/tap_off.png) no-repeat;
+    display:block;
+    color:#414141;
+	font-size:15px;
+	font-weight:700;
+	padding:23px 0 0 20px;
+}
+.con03 ul.tab_title li a.tab_selected{
+	width:289px;
+	background:url(../img/tabmenu/tap_on.png) no-repeat;
+	color:#fff;
+	cursor:default; /* 현재 열려있는 탭은 클릭 안되도록 */
+}
+
+/* 탭 콘텐츠 공통 */
+.con03 ul.tab_panel>li{
+	width:1232px;
+	height:368px;
+	border:2px solid #bebebe;
+	border-top:none;
+	padding-top:1px; /* 탭 타이틀과의 간격 */
+	background:#fff;
+}
+
+/* 관광안내 */
+.con03 ul.tab_panel li#tab1 ul li{
+	float:left;
+	padding-right:1px;
+}
+.con03 ul.tab_panel li#tab1 ul li.tab1_4{
+	width:306px;
+	height:368px;
+	padding-right:0;
+}
+
+/* 추천행사 */
+
+.con03 ul.tab_panel li#tab2 ul{
+	margin:14px 0;
+}
+.con03 ul.tab_panel li#tab2 ul li{
+	float:left;
+	padding:0 10px;
+	height:339px;
+	position:relative;
+	border-right:1px solid #ccc;
+}
+.con03 ul.tab_panel li#tab2 ul li:last-child{
+	padding-right:0;
+	border-right:0;
+}
+.con03 ul.tab_panel li#tab2 ul li a:hover{
+	color:#414141;
+	text-decoration:underline;
+}
+.con03 ul.tab_panel li#tab2 ul li a .tabtxt>h5{
+	font-size:15px;
+	color:#414141;
+	padding:15px 0 0 10px;
+	font-weight:bold;
+}
+.con03 ul.tab_panel li#tab2 ul li a .tabtxt>p{
+	font-size:13px;
+	color:#414141;
+	background:url(../img/dot.png) no-repeat 13px 11px;
+	padding:5px 0 0 23px;
+	line-height:1.4;
+}
+.con03 ul.tab_panel li#tab2 ul li>p{ /* 자세히보기 버튼 */
+	position:absolute;
+	bottom:0px;
+	right:15px;
+	cursor:pointer;
+}
+
+/* 레저스포츠 */
+
+.con03 ul.tab_panel li#tab3 ul{
+	margin:14px 0;
+}
+.con03 ul.tab_panel li#tab3 ul li{
+	float:left;
+	padding:0 10px;
+	height:339px;
+	position:relative;
+	border-right:1px solid #ccc;
+}
+.con03 ul.tab_panel li#tab3 ul li:last-child{
+	padding-right:0;
+	border-right:0;
+}
+.con03 ul.tab_panel li#tab3 ul li a:hover{
+	color:#414141;
+	text-decoration:underline;
+}
+.con03 ul.tab_panel li#tab3 ul li a .tabtxt>h5{
+	font-size:15px;
+	color:#414141;
+	padding:15px 0 0 10px;
+	font-weight:bold;
+}
+.con03 ul.tab_panel li#tab3 ul li a .tabtxt>p{
+	font-size:13px;
+	color:#414141;
+	background:url(../img/dot.png) no-repeat 13px 11px;
+	padding:5px 0 0 23px;
+	line-height:1.4;
+}
+.con03 ul.tab_panel li#tab3 ul li>p{ /* 자세히보기 버튼 */
+	position:absolute;
+	bottom:0px;
+	right:15px;
+	cursor:pointer;
+}
+
+/* 춘천대표먹거리 */
+
+.con03 ul.tab_panel li#tab4 ul{
+	margin:14px 0;
+}
+.con03 ul.tab_panel li#tab4 ul li{
+	float:left;
+	padding:0 10px;
+	height:339px;
+	position:relative;
+	border-right:1px solid #ccc;
+}
+.con03 ul.tab_panel li#tab4 ul li:last-child{
+	padding-right:0;
+	border-right:0;
+}
+.con03 ul.tab_panel li#tab4 ul li a:hover{
+	color:#414141;
+	text-decoration:underline;
+}
+.con03 ul.tab_panel li#tab4 ul li a .tabtxt>h5{
+	font-size:15px;
+	color:#414141;
+	padding:15px 0 0 10px;
+	font-weight:bold;
+}
+.con03 ul.tab_panel li#tab4 ul li a .tabtxt>p{
+	font-size:13px;
+	color:#414141;
+	background:url(../img/dot.png) no-repeat 13px 11px;
+	padding:5px 0 0 23px;
+	line-height:1.4;
+}
+.con03 ul.tab_panel li#tab4 ul li>p{ /* 자세히보기 버튼 */
+	position:absolute;
+	bottom:0px;
+	right:15px;
+	cursor:pointer;
+}
+
+/* ---------------------------- 배너 영역 ---------------------------- */
+
+.banner_zone{
+	clear:both;
+	width:100%;
+	height:47px;
+	margin-top:50px;
+	position:relative;
+}
+
+/* 버튼영역 */
+
+.banner_btn{
+	width:1236px;
+	margin:0 auto;
+	position:relative;
+}
+.banner_leftbtn{
+	position:absolute;
+	top:0; left:0;
+	cursor:pointer;
+}
+.banner_rightbtn{
+	position:absolute;
+	top:0; right:0;
+	cursor:pointer;
+}
+
+/* 배너 스크롤 영역 */
+
+.scroller_roll{
+	width:1164px;
+	padding:0px;
+	margin:0 auto;
+    overflow:hidden;
+	position:absolute;
+	top:0; left:0;
+}
+.scroller_roll ul{
+    width:100%;
+	position:absolute;
+	top:0; left:0;
+}
+.scroller_roll ul li{
+    padding:0px;
+    margin:0px;
+    float:left;
+    text-align:center;
+    display:inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

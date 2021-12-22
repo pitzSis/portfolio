@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* 헤더 레이아웃 */
+#header{
+	width:100%;
+	height:213px;
+	background:url(../img/util_bg.png) repeat-x;
+	border-bottom:3px solid #df233b;
+}
+.header_in{
+	width:1236px;
+	margin:0 auto;
+}
+
+.top_area1{
+	width:1236px;
+	height:49px;
+	position:relative;
+	padding:0 10px;
+	clear:both;
+}
+
+.top_area2{
+	width:1236px;
+	height:115px;
+	position:relative;
+	padding:0 10px;
+	clear:both;
+}
+
+.top_nav{
+	width:1236px;
+	height:49px;
+	clear:both;
+	position:relative;
+	z-index:100; /*풀다운메뉴이기때문에 아래 비주얼과 겹침->메뉴가 맨위에 오게함*/
+}
+
+/* 날씨 영역 */
+
+.weather_area{ /* 날씨영역 상단바 왼쪽으로 */
+	float:left;
+}
+
+.weather_sel{
+	padding:12px 0 0 2px;
+	float:left;
+}
+.weather_sel label{
+	font-size:13px;
+}
+.weather_sel select{
+	border:1px solid #c3c3c3;
+	width:80px;
+	height:24px;
+	padding-left:5px;
+	margin:0 15px 0 10px; /* 실시간날씨 글자와 '해' 이미지 사이 여백 지정 */
+}
+
+.weather_info{
+	float:left;
+}
+.weather_info li{
+	float:left;
+	font-size:13px;
+	padding-right:8px;
+}
+.list00{
+	padding-top:8px;
+}
+.list01{
+	padding-top:16px;
+}
+
+/* 유틸메뉴 영역 */
+
+.util_area{ /* 유틸메뉴 상단바 오른쪽으로 */
+	float:right;
+}
+
+.util_area li{
+	float:left;
+	background:url(../img/line.png) no-repeat 0 16px;
+	padding:16px 10px 0;
+}
+.util_area li:first-child{
+	background:none;
+}
+.util_area li a{
+	font-size:13px;
+	color:#333;
+}
+.util_area li a:hover{
+	text-decoration:underline;
+}
+
+.util_area li.font_size .font_txt{ /* 글자크기 메뉴 글자와 이미지 사이 여백 */
+	padding-right:5px;
+}
+
+.util_area li.language_area{
+	padding-top:11px;
+}
+.language_area select{
+	border:1px solid #c3c3c3;
+	width:100px;
+	height:24px;
+	padding-left:5px;
+}
+.language_area .lang_btn{
+	padding-left:5px; /* select 박스와 go 버튼 사이의 여백 */
+}
+
+/* 로고 영역 */
+
+.top_area2 h1{
+	padding-top:15px;
+	float:left;
+	width:308px;
+	height:74px;
+}
+
+/* 검색영역 */
+
+.search_area{
+	float:left;
+	width:469px;
+	background:url(../img/search_bg.png) no-repeat 129px 34px;
+	padding:34px 0 0 129px;
+}
+
+.com_search{
+	float:left;
+	position:relative;
+	padding:5px;
+	z-index:110; /* gnb 메뉴보다 위에 위치 */
+}
+.com_search a{
+	position:relative;
+}
+.com_search ul{
+	display:none;
+    position:absolute;
+    top:90%;
+    left:5px;
+	margin-left:3px;
+    width:85px;
+    line-height:20px;
+    background:#fff;
+    border:1px solid #4f99e2;
+}
+.com_search ul li{
+	padding:3px 5px;
+}
+.com_search ul li a{
+    color:#333;
+    margin-left:5px;
+	font-size:13px;
+}
+.com_search ul li a:hover{
+    color:#fff;
+}
+.com_search ul li:hover{
+	background:#4f99e2;
+}
+
+.search_box input{
+	float:left;
+	border:none;
+}
+.search_txt{
+	width:200px;
+	margin:16px 0 0 10px	;
+	font-size:13px;
+}
+
+/* 슬로건 영역 */
+
+.slogan{
+	float:left;
+	padding-top:35px;
+}
+
+/* GNB 영역 */
+
+.top_nav .topmenu{
+	width:1236px;
+	margin:0 auto;
+}
+.top_nav .topmenu>li{
+	float:left;
+	width:206px;
+	height:49px;
+	text-align:center;
+}
+.top_nav .topmenu>li>a{   /*주메뉴설정*/
+	display:block;
+	color:#333;
+	font-size:17px;
+	font-family:'Nanum Gothic', sans-serif;
+	font-weight:bold;
+	text-align:center;
+	padding-top:15px;
+}
+
+/*서브메뉴*/
+
+.top_nav .topmenu>li>ul.smenu{ 
+	display:none;
+	position:absolute;
+	width:4000px; 
+	height:401px;
+	top:100%;
+	padding-top:20px;
+	padding-left:8px;
+	border-top:3px solid #df233b;
+	border-bottom:3px solid #949494;
+}
+.top_nav .topmenu>li>ul.smenu li{
+	text-align:left;
+	line-height:2;
+}
+
+.topmenu .menu0{  /*가로100%로 사용할 menu0 생성(빈컨텐츠)*/
+    display:none;
+    position:absolute;
+    width:4000px;
+    height:401px;
+    left:-1500px;
+	top:100%;
+    background:#f0f0f0;
+	padding-top:20px;
+	border-top:3px solid #df233b;
+    border-bottom:3px solid #949494;
+}
+
+.smenu>li>a{  /* 서브 하이퍼링크*/
+	color:#333;
+	padding-left:44px;
+	font-size:14px;
+	font-family:'Nanum Gothic', sans-serif;
+}
+.smenu>li>a:hover{  /* 서브 하이퍼링크 오버*/  
+	color:#fff;
+	font-weight:900;
+	background:url(../img/gnb_hover.png) no-repeat 20px 1px;
+}
+
+/*각 주메뉴별 서브메뉴 가로너비설정(옆으로 쭉 나오지 않게 함)*/
+
+.topmenu .menu1 ul.s_first{
+    width:206px !important;
+}
+.topmenu .menu2 ul.s_second{
+    width:206px !important;
+}
+.topmenu .menu3 ul.s_third{
+    width:206px !important; 
+}
+.topmenu .menu4 ul.s_fourth{
+    width:206px !important;
+}
+.topmenu .menu5 ul.s_fifth{
+    width:206px !important;
+}
+.topmenu .menu6 ul.s_sixth{
+    width:206px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
